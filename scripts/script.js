@@ -19,7 +19,6 @@ const resetGame = () => {
     keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
     gameModal.classList.remove("show");
 }
-
 const getRandomWord = () => {
     // Selecting a random word and hint from the WordList
     const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
